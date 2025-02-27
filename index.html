@@ -21,68 +21,71 @@
                 <span class="material-symbols-outlined">share</span>
             </button>
         </header>
-        <main class="card card-front" id="card-front">
-            <div class="card-top">
-                <!-- <img alt="Duallure Acessórios" class="image" id="banner"> -->
-                <div class="image" id="banner"></div>
-                <div class="tag-container">
-                    <div class="tag">
-                        <span class="material-symbols-outlined">percent</span>
-                        <span>Frete grátis</span>
+        <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+                <main class="card card-front" id="card-front">
+                    <div class="card-top">
+                        <div class="image" id="banner"></div>
+                        <div class="tag-container">
+                            <div class="tag">
+                                <span class="material-symbols-outlined">percent</span>
+                                <span>Frete grátis</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2>Cliente VIP tem desconto!</h2>
+                            <p>Disponível em todos os nossos produtos, por tempo limitado!</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <h2>Cliente VIP tem desconto!</h2>
-                    <p>Disponível em todos os nossos produtos, por tempo limitado!</p>
-                </div>
-            </div>
-            <div class="card-divider">
-                <span class="circle circle-left"></span>
-                <span class="dash-line"></span>
-                <span class="circle circle-right"></span>
-            </div>
-            <div class="card-button">
-                <button class="btn-primary" id="btn-obter">Obter cupom</button>
-            </div>
-        </main>
-        <main class="card card-back hidden" id="card-back">
-            <div class="card-top">
-                <div class="card-body">
-                    <div class="container-codigo">
-                        <span class="material-symbols-outlined no-opacity">undo</span>
-                        <p>Código do cupom</p>
-                        <span class="material-symbols-outlined tooltip" id="btn-back">
-                            undo
-                            <span class="tooltip-text">Desvirar</span>
-                        </span>
+                    <div class="card-divider">
+                        <span class="circle circle-left"></span>
+                        <span class="dash-line"></span>
+                        <span class="circle circle-right"></span>
                     </div>
-                    <div class="container-cupom">
-                        <span class="material-symbols-outlined no-opacity">content_copy</span>
-                        <h2 id="cupom">CLIENTEVIP</h2>
-                        <span class="material-symbols-outlined tooltip" id="btn-copy">
-                            content_copy
-                            <span class="tooltip-text">Copiar</span>
-                        </span>
+                    <div class="card-button">
+                        <button class="btn-primary" id="btn-obter">Obter cupom</button>
                     </div>
-                    <div class="container-termos">
-                        <h4>Termos e Condições</h4>
-                        <ul>
-                            <li>- Válido para compras acima de R$45</li>
-                            <li>- Limitaado a uma compra por cliente</li>
-                        </ul>
+                </main>
+                <main class="card card-back" id="card-back">
+                    <div class="card-top">
+                        <div class="card-body">
+                            <div class="container-codigo">
+                                <span class="material-symbols-outlined no-opacity">undo</span>
+                                <p>Código do cupom</p>
+                                <span class="material-symbols-outlined tooltip" id="btn-back">
+                                    undo
+                                    <span class="tooltip-text">Desvirar</span>
+                                </span>
+                            </div>
+                            <div class="container-cupom">
+                                <span class="material-symbols-outlined no-opacity">content_copy</span>
+                                <h2 id="cupom">CLIENTEVIP</h2>
+                                <span class="material-symbols-outlined tooltip" id="btn-copy">
+                                    content_copy
+                                    <span class="tooltip-text">Copiar</span>
+                                </span>
+                            </div>
+                            <div class="container-termos">
+                                <h4>Termos e Condições</h4>
+                                <ul>
+                                    <li>- Válido para compras acima de R$45</li>
+                                    <li>- Limitaado a uma compra por cliente</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="card-divider">
+                        <span class="circle circle-left"></span>
+                        <span class="dash-line"></span>
+                        <span class="circle circle-right"></span>
+                    </div>
+                    <div class="card-button">
+                        <a class="btn-primary" id="btn-usar" href="https://duallureacessorios.lojavirtualnuvem.com.br/"
+                            target="_blank">Usar cupom</a>
+                    </div>
+                </main>
             </div>
-            <div class="card-divider">
-                <span class="circle circle-left"></span>
-                <span class="dash-line"></span>
-                <span class="circle circle-right"></span>
-            </div>
-            <div class="card-button">
-                <a class="btn-primary" id="btn-usar" href="https://duallureacessorios.lojavirtualnuvem.com.br/"
-                    target="_blank">Usar cupom</a>
-            </div>
-        </main>
+        </div>
     </div>
 </body>
 <script src="./assets/script.js"></script>
