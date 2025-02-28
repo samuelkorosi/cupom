@@ -322,6 +322,9 @@ body {
 
     transition: transform 0.8s;
     transform-style: preserve-3d;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 /* .flip-card:hover .flip-card-inner {
