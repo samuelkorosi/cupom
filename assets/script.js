@@ -22,7 +22,7 @@ function copyCupom() {
 function share() {
     if (navigator.share) {
         navigator.share({
-          title: document.title,
+          title: "Duallure Acessórios",//document.title,
           text: "Compartilhar cupom",
           url: window.location.href
         })
