@@ -1,9 +1,5 @@
 const btnObter = document.getElementById("btn-obter");
-const cardFront = document.getElementById("card-front");
-const cardBack = document.getElementById("card-back");
-
 const btnBack = document.getElementById("btn-back");
-const btnCopy = document.getElementById("btn-copy");
 const cupomTxt = document.getElementById("cupom");
 
 const flipCard = document.getElementById("flip-card");
@@ -19,6 +15,18 @@ btnBack.addEventListener("click", x => {
     flipCard.classList.remove("clicked");
 });
 
-btnCopy.addEventListener("click", x => {
+function copyCupom() {
     navigator.clipboard.writeText(cupomTxt.innerText);
-});
+};
+
+function share() {
+    if (navigator.share) {
+        navigator.share({
+          title: document.title,
+          text: "Compartilhar cupom",
+          url: window.location.href
+        })
+        .then()
+        .catch(error => console.log('Error sharing:', error));
+      }
+};
